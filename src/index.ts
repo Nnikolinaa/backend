@@ -33,10 +33,10 @@ app.use(express.json());
 app.use(UserService.verifyToken); // Middleware to verify token for all routes
 app.use('/api', signupRoute);
 app.use('/api', loginRoute);
-app.use('/api', vehicleRoute); // Register the vehicle route
-app.use('/api/user/', userRoute); // Register the user route
-app.use('/api', rentalRoute); // Register the rental route
-app.use('/api', paymentRoute); // Register the payment route
+app.use('/api', vehicleRoute); 
+app.use('/api/user/', userRoute); 
+app.use('/api', rentalRoute); 
+app.use('/api', paymentRoute); 
 
 app.get('/', (req, res) => {
   res.send('Welcome to the API!');
